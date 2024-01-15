@@ -1,0 +1,6 @@
+{
+  "namespace": "com.udacity",
+  "type": "record",
+  "name": "weather.key",
+  "fields": []
+}
