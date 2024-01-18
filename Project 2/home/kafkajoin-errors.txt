@@ -1,0 +1,90 @@
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+:: loading settings :: url = jar:file:/data/spark/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+org.apache.spark#spark-sql-kafka-0-10_2.11 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-f5c03f57-ff4b-403b-8cf0-3ee306929ff0;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.11;2.4.6 in central
+	found org.apache.kafka#kafka-clients;2.0.0 in central
+	found org.lz4#lz4-java;1.4.0 in central
+	found org.xerial.snappy#snappy-java;1.1.7.5 in central
+	found org.slf4j#slf4j-api;1.7.16 in central
+	found org.spark-project.spark#unused;1.0.0 in central
+downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.11/2.4.6/spark-sql-kafka-0-10_2.11-2.4.6.jar ...
+	[SUCCESSFUL ] org.apache.spark#spark-sql-kafka-0-10_2.11;2.4.6!spark-sql-kafka-0-10_2.11.jar (121ms)
+downloading https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/2.0.0/kafka-clients-2.0.0.jar ...
+	[SUCCESSFUL ] org.apache.kafka#kafka-clients;2.0.0!kafka-clients.jar (270ms)
+downloading https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar ...
+	[SUCCESSFUL ] org.spark-project.spark#unused;1.0.0!unused.jar (14ms)
+downloading https://repo1.maven.org/maven2/org/lz4/lz4-java/1.4.0/lz4-java-1.4.0.jar ...
+	[SUCCESSFUL ] org.lz4#lz4-java;1.4.0!lz4-java.jar (33ms)
+downloading https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.7.5/snappy-java-1.1.7.5.jar ...
+	[SUCCESSFUL ] org.xerial.snappy#snappy-java;1.1.7.5!snappy-java.jar(bundle) (178ms)
+downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16.jar ...
+	[SUCCESSFUL ] org.slf4j#slf4j-api;1.7.16!slf4j-api.jar (14ms)
+:: resolution report :: resolve 4398ms :: artifacts dl 635ms
+	:: modules in use:
+	org.apache.kafka#kafka-clients;2.0.0 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.11;2.4.6 from central in [default]
+	org.lz4#lz4-java;1.4.0 from central in [default]
+	org.slf4j#slf4j-api;1.7.16 from central in [default]
+	org.spark-project.spark#unused;1.0.0 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.7.5 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   6   |   6   |   6   |   0   ||   6   |   6   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-f5c03f57-ff4b-403b-8cf0-3ee306929ff0
+	confs: [default]
+	6 artifacts copied, 0 already retrieved (4664kB/17ms)
+24/01/12 19:57:16 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+24/01/12 19:57:20 INFO SparkContext: Running Spark version 2.4.6
+24/01/12 19:57:20 INFO SparkContext: Submitted application: KafkaJoin
+24/01/12 19:57:20 INFO SecurityManager: Changing view acls to: root
+24/01/12 19:57:20 INFO SecurityManager: Changing modify acls to: root
+24/01/12 19:57:20 INFO SecurityManager: Changing view acls groups to: 
+24/01/12 19:57:20 INFO SecurityManager: Changing modify acls groups to: 
+24/01/12 19:57:20 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+24/01/12 19:57:21 INFO Utils: Successfully started service 'sparkDriver' on port 44277.
+24/01/12 19:57:21 INFO SparkEnv: Registering MapOutputTracker
+24/01/12 19:57:21 INFO SparkEnv: Registering BlockManagerMaster
+24/01/12 19:57:21 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/01/12 19:57:21 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/01/12 19:57:21 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-90ae95c0-1d32-47d1-a64f-85c205ea3580
+24/01/12 19:57:21 INFO MemoryStore: MemoryStore started with capacity 366.3 MB
+24/01/12 19:57:21 INFO SparkEnv: Registering OutputCommitCoordinator
+24/01/12 19:57:22 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+24/01/12 19:57:22 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://5aac6e1ee01ad378c5e28c179e1773307e2c42a8-6597bf8b89-q25bz:4040
+24/01/12 19:57:22 INFO SparkContext: Added JAR file:///root/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.11-2.4.6.jar at spark://5aac6e1ee01ad378c5e28c179e1773307e2c42a8-6597bf8b89-q25bz:44277/jars/org.apache.spark_spark-sql-kafka-0-10_2.11-2.4.6.jar with timestamp 1705089442467
+24/01/12 19:57:22 INFO SparkContext: Added JAR file:///root/.ivy2/jars/org.apache.kafka_kafka-clients-2.0.0.jar at spark://5aac6e1ee01ad378c5e28c179e1773307e2c42a8-6597bf8b89-q25bz:44277/jars/org.apache.kafka_kafka-clients-2.0.0.jar with timestamp 1705089442468
+24/01/12 19:57:22 INFO SparkContext: Added JAR file:///root/.ivy2/jars/org.spark-project.spark_unused-1.0.0.jar at spark://5aac6e1ee01ad378c5e28c179e1773307e2c42a8-6597bf8b89-q25bz:44277/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1705089442468
+24/01/12 19:57:22 INFO SparkContext: Added JAR file:///root/.ivy2/jars/org.lz4_lz4-java-1.4.0.jar at spark://5aac6e1ee01ad378c5e28c179e1773307e2c42a8-6597bf8b89-q25bz:44277/jars/org.lz4_lz4-java-1.4.0.jar with timestamp 1705089442468
+24/01/12 19:57:22 INFO SparkContext: Added JAR file:///root/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.7.5.jar at spark://5aac6e1ee01ad378c5e28c179e1773307e2c42a8-6597bf8b89-q25bz:44277/jars/org.xerial.snappy_snappy-java-1.1.7.5.jar with timestamp 1705089442468
+24/01/12 19:57:22 INFO SparkContext: Added JAR file:///root/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar at spark://5aac6e1ee01ad378c5e28c179e1773307e2c42a8-6597bf8b89-q25bz:44277/jars/org.slf4j_slf4j-api-1.7.16.jar with timestamp 1705089442468
+24/01/12 19:57:22 INFO SparkContext: Added file file:///root/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.11-2.4.6.jar at file:///root/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.11-2.4.6.jar with timestamp 1705089442566
+24/01/12 19:57:22 INFO Utils: Copying /root/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.11-2.4.6.jar to /tmp/spark-229104a0-8570-486a-90b2-38c10a3433ac/userFiles-08d7937c-cdb9-4701-9f67-95d6735c0e10/org.apache.spark_spark-sql-kafka-0-10_2.11-2.4.6.jar
+24/01/12 19:57:22 INFO SparkContext: Added file file:///root/.ivy2/jars/org.apache.kafka_kafka-clients-2.0.0.jar at file:///root/.ivy2/jars/org.apache.kafka_kafka-clients-2.0.0.jar with timestamp 1705089442584
+24/01/12 19:57:22 INFO Utils: Copying /root/.ivy2/jars/org.apache.kafka_kafka-clients-2.0.0.jar to /tmp/spark-229104a0-8570-486a-90b2-38c10a3433ac/userFiles-08d7937c-cdb9-4701-9f67-95d6735c0e10/org.apache.kafka_kafka-clients-2.0.0.jar
+24/01/12 19:57:22 INFO SparkContext: Added file file:///root/.ivy2/jars/org.spark-project.spark_unused-1.0.0.jar at file:///root/.ivy2/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1705089442664
+24/01/12 19:57:22 INFO Utils: Copying /root/.ivy2/jars/org.spark-project.spark_unused-1.0.0.jar to /tmp/spark-229104a0-8570-486a-90b2-38c10a3433ac/userFiles-08d7937c-cdb9-4701-9f67-95d6735c0e10/org.spark-project.spark_unused-1.0.0.jar
+24/01/12 19:57:22 INFO SparkContext: Added file file:///root/.ivy2/jars/org.lz4_lz4-java-1.4.0.jar at file:///root/.ivy2/jars/org.lz4_lz4-java-1.4.0.jar with timestamp 1705089442675
+24/01/12 19:57:22 INFO Utils: Copying /root/.ivy2/jars/org.lz4_lz4-java-1.4.0.jar to /tmp/spark-229104a0-8570-486a-90b2-38c10a3433ac/userFiles-08d7937c-cdb9-4701-9f67-95d6735c0e10/org.lz4_lz4-java-1.4.0.jar
+24/01/12 19:57:22 INFO SparkContext: Added file file:///root/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.7.5.jar at file:///root/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.7.5.jar with timestamp 1705089442686
+24/01/12 19:57:22 INFO Utils: Copying /root/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.7.5.jar to /tmp/spark-229104a0-8570-486a-90b2-38c10a3433ac/userFiles-08d7937c-cdb9-4701-9f67-95d6735c0e10/org.xerial.snappy_snappy-java-1.1.7.5.jar
+24/01/12 19:57:22 INFO SparkContext: Added file file:///root/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar at file:///root/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar with timestamp 1705089442764
+24/01/12 19:57:22 INFO Utils: Copying /root/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar to /tmp/spark-229104a0-8570-486a-90b2-38c10a3433ac/userFiles-08d7937c-cdb9-4701-9f67-95d6735c0e10/org.slf4j_slf4j-api-1.7.16.jar
+24/01/12 19:57:23 INFO Executor: Starting executor ID driver on host localhost
+24/01/12 19:57:23 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40087.
+24/01/12 19:57:23 INFO NettyBlockTransferService: Server created on 5aac6e1ee01ad378c5e28c179e1773307e2c42a8-6597bf8b89-q25bz:40087
+24/01/12 19:57:23 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/01/12 19:57:23 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 5aac6e1ee01ad378c5e28c179e1773307e2c42a8-6597bf8b89-q25bz, 40087, None)
+24/01/12 19:57:23 INFO BlockManagerMasterEndpoint: Registering block manager 5aac6e1ee01ad378c5e28c179e1773307e2c42a8-6597bf8b89-q25bz:40087 with 366.3 MB RAM, BlockManagerId(driver, 5aac6e1ee01ad378c5e28c179e1773307e2c42a8-6597bf8b89-q25bz, 40087, None)
+24/01/12 19:57:23 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 5aac6e1ee01ad378c5e28c179e1773307e2c42a8-6597bf8b89-q25bz, 40087, None)
+24/01/12 19:57:23 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 5aac6e1ee01ad378c5e28c179e1773307e2c42a8-6597bf8b89-q25bz, 40087, None)
+24/01/12 19:57:24 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/workspace/home/spark-warehouse/').
+24/01/12 19:57:24 INFO SharedState: Warehouse path is 'file:/workspace/home/spark-warehouse/'.
+24/01/12 19:57:26 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+24/01/12 19:57:43 WARN NetworkClient: [Consumer clientId=consumer-2, groupId=spark-kafka-source-7ed99e92-337d-4a17-bbc7-6bbf105200ca-870665676-driver-0] Error while fetching metadata with correlation id 2 : {stedi-events=LEADER_NOT_AVAILABLE}
